@@ -14,7 +14,7 @@
       app.get('/', function(req, res) {</br>
         res.sendFile(__dirname + "/index.html", function(error) {</br>
           if (error) {</br>
-            console.log('There was an error retreving about.html');</br>
+            console.log('There was an error retrieving index.html');</br>
           } else {</br>
             console.log('Was able to send about.html');</br>
           }</br>
@@ -24,7 +24,7 @@
       app.get('/about', function(req, res) {</br>
         res.sendFile(__dirname + "/about.html", function(error) {</br>
           if (error) {</br>
-            console.log('There was an error retreving about.html');</br>
+            console.log('There was an error retrieving about.html');</br>
           } else {</br>
             console.log('Was able to send about.html');</br>
           }</br>
