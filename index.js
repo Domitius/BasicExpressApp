@@ -9,7 +9,7 @@ app.get('/', function(req, res) {
   // This works without the path module but as the routes become more complex it is good practice to use path.
   res.sendFile(path.join(__dirname + "/index.html"), function(error) {
     if (error) {
-      console.log('There was an error retreving about.html');
+      console.log('There was an error retrieving index.html');
     } else {
       console.log('Was able to send index.html');
     }
@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
 app.get('/about', function(req, res) {
   res.sendFile(path.join(__dirname + "/about.html"), function(error) {
     if (error) {
-      console.log('There was an error retreving about.html');
+      console.log('There was an error retrieving about.html');
     } else {
       console.log('Was able to send about.html');
     }
